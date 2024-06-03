@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Apple from "./Apple.jsx";
+import IceCreamSandwich from "./IceCreamSandwich.jsx";
+import HotCheetos from "./HotCheetos.jsx";
 import VendingMachine from "./VendingMachine.jsx";
 import "./App.css";
 
@@ -24,6 +26,8 @@ function App() {
             path="/apple"
             element={<Apple />}
           />
+          <Route path="/ice-cream-sandwich" element={<IceCreamSandwich />} />
+          <Route path="/hot-cheetos" element={<HotCheetos />} />
         </Routes>
       </BrowserRouter>
     </div>
